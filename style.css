@@ -188,7 +188,7 @@ section {
 }
 
 .download_img_hero {
-  width: 300px;
+  min-width: 10%;
 }
 
 .container {
@@ -209,7 +209,7 @@ section {
 }
 
 .primary {
-  font-size: 3rem;
+  font-size: clamp(2rem, 1rem + 10vw, 4rem);
 }
 
 .container__text {
@@ -254,6 +254,7 @@ section {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
+  overflow: hidden;
 }
 
 .all-devices-list li::after {
@@ -266,6 +267,7 @@ section {
 footer {
   padding-block: 6rem;
   background-color: black;
+  width: 100%;
 }
 
 .pre__footer ul {
@@ -281,4 +283,15 @@ footer {
 }
 .location__icon {
   width: 16px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  overflow: hidden;
+}
+
+.footer__container ul {
+  overflow: hidden;
 }
